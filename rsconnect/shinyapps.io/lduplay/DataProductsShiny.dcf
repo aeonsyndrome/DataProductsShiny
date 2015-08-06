@@ -1,0 +1,8 @@
+name: DataProductsShiny
+account: lduplay
+server: shinyapps.io
+bundleId: 233332
+url: https://lduplay.shinyapps.io/DataProductsShiny
+when: 1438848736.41507
+asMultiple: FALSE
+asStatic: FALSE
