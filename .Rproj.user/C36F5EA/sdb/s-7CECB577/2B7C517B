@@ -1,0 +1,17 @@
+{
+    "contents" : "---\ntitle       : Data Products Course Project\nsubtitle    : Graphical Representation of Power\nauthor      : Leon Duplay\njob         : Data Scientist\nframework   : io2012        # {io2012, html5slides, shower, dzslides, ...}\nhighlighter : highlight.js  # {highlight.js, prettify, highlight}\nhitheme     : tomorrow      # \nwidgets     : [mathjax]     # {mathjax, quiz, bootstrap}\nmode        : selfcontained # {standalone, draft}\nknit        : slidify::knit2slides\n---\n\n## Course Project\n\n* A ShinyApp on Rstudio's shiny server\n* Provides interactive and graphical representation of power for a sample mean test\n* $H_{0}: \\mu_{a} = \\mu_{0} ; H_{a}: \\mu_{a} > \\mu_{0}$\n* See Statistical Inference course, lecture on Power by B. Caffo, J. Leek and R. Peng\n* https://www.coursera.org/course/statinference\n\n--- .class #id \n\n## What is Power?\n\n* Power is the probability of rejecting the null hypothesis when it is false\n* A type II error is failing to reject the null hypothesis\nwhen it's false; the probability of a type II error is usually called $\\beta$\n* Power $= 1 - \\beta$\n\n--- .class #id \n\n## Example\n\n* $H_{0}: \\mu_{a} = \\mu_{0} ; H_{a}: \\mu_{a} > \\mu_{0}$\n \n* For $\\mu_{0} = 30 ; \\mu_{a} = 32 ; \\alpha = 0.05 ; n = 16 ; \\sigma = 4$\n\n```{r echo=TRUE}\n\nmu0 <- 30\nsigma <- 4\nmua <- 32\nn <- 16\nalpha <- 0.05\n\npower.t.test(n,mua-mu0,sd=sigma,type=\"one.sample\",alt=\"one.sided\",sig.level = alpha)$power\n\n```\n\n--- .class #id \n\n## ShinyApp\n\nPlease check my interactive app on Rstudio's shiny server:\n* https://lduplay.shinyapps.io/DataProductsShiny\n\nThe R code for this ShinyApp can be found on my GitHub repo:\n* https://github.com/lduplay/DataProductsShiny\n\nThank You!\n\n\n\n\n",
+    "created" : 1438850160596.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1687459200",
+    "id" : "2B7C517B",
+    "lastKnownWriteTime" : 1438850971,
+    "path" : "~/DataSciTraining/Repos/DataProductsShiny/DataProductsSlidify/index.Rmd",
+    "project_path" : "DataProductsSlidify/index.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}

@@ -1,5 +1,5 @@
 ---
-title       : Developing Data Products Course Project
+title       : Data Products Course Project
 subtitle    : Graphical Representation of Power
 author      : Leon Duplay
 job         : Data Scientist
@@ -16,7 +16,8 @@ knit        : slidify::knit2slides
 * A ShinyApp on Rstudio's shiny server
 * Provides interactive and graphical representation of power for a sample mean test
 * $H_{0}: \mu_{a} = \mu_{0} ; H_{a}: \mu_{a} > \mu_{0}$
-* See Statistical Inference course, lecture on Power by B. Caffo, J. Leek and R. Peng (JHBSPH) for reference
+* See Statistical Inference course, lecture on Power by B. Caffo, J. Leek and R. Peng
+* https://www.coursera.org/course/statinference
 
 --- .class #id 
 
